@@ -1,16 +1,12 @@
 # Experiment-08- Encoders-and-decoders 
-### AIM: 
+### Aim: 
 To implement 8 to 3 Encoder and  3to8 Decoder using verilog and validate its outputs
-
-### HARDWARE REQUIRED:  
+### Hardware Required:  
 – PC, Cyclone II , USB flasher
-
-### SOFTWARE REQUIRED:  
+### Software Required:  
 Quartus prime
-
-### THEORY 
-
-## Encoders
+### Theory:
+## Encoders:
 Binary code of N digits can be used to store 2N distinct elements of coded information. This is what encoders and decoders are used for. Encoders convert 2N lines of input into a code of N bits and Decoders decode the N bits into 2N lines.
 
 1. Encoders –
@@ -33,7 +29,7 @@ Hence, the encoder can be realised with OR gates as follows:
 ![image](https://user-images.githubusercontent.com/36288975/171543740-68403b82-aa93-4c98-9343-f32b14885a2e.png)
 ## Figure -02 3 to 8 Encoder implenentation 
 
- ### Decoders 
+ ### Decoders:
 A decoder does the opposite job of an encoder. It is a combinational circuit that converts n lines of input into 2n lines of output.
 
 Let’s take an example of 3-to-8 line decoder.
@@ -60,7 +56,7 @@ D7 = X Y Z
 ![image](https://user-images.githubusercontent.com/36288975/171543866-5a6eace6-8683-49d7-9c4f-a7cb30ec3035.png)
 ## Figure -04 8 to 3 Decoder implementation 
 
-### Procedure
+### Procedure:
 1.create module encoder and decoder.
 
 2.Get inputs and outputs for encoders and decoders.
@@ -69,13 +65,11 @@ D7 = X Y Z
 
 4.perform RTL LOGIC and get waveform.
 
-
-
-### PROGRAM (ENCODER)
-```
-Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: EASWAR.J
-RegisterNumber:  212221230024
+### Program (Encoder):
+~~~
+Program for Encoders and verify its truth table in quartus using Verilog programming.
+Developed by: H.Syed Abdul Wasih
+RegisterNumber:  212221240057
 
 module enc(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
 input d0,d1,d2,d3,d4,d5,d6,d7;
@@ -84,39 +78,18 @@ or(a,d4,d5,d6,d7);
 or(b,d2,d3,d6,d7);
 or(c,d1,d3,d5,d7);
 endmodule
-```
-
-
-
-### RTL LOGIC  
-
-
+~~~
+### RTL Logic:
 ![image](https://user-images.githubusercontent.com/94154683/171544996-5cfa93e7-86fc-42d8-9e5d-687b3146ff65.png)
-
-
-
-
-
-
-### TIMING DIGRAMS  
-
-
+### Timing Diagram: 
 ![WhatsApp Image 2022-06-02 at 8 39 36 AM](https://user-images.githubusercontent.com/94154683/171545012-01846b5b-2c52-4f99-9347-f1a583c71d13.jpeg)
-
-
-
-### TRUTH TABLE 
-
-
+### Truth Table:
 ![enc](https://user-images.githubusercontent.com/94154683/171545485-081f0497-5689-49ba-9e62-f1e1ead2c234.png)
-
-
-### PROGRAM(DECODER):
-```
-Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: EASWAR.J
-RegisterNumber:  212221230024
-
+### Program (Decoder):
+~~~
+Program for Decoders  and verify its truth table in quartus using Verilog programming.
+Developed by: H.Syed Abdul Wasih
+RegisterNumber:  212221240057
 
 module enc(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
 input a,b,c;
@@ -129,23 +102,20 @@ assign d4 = (a&~b&~c);
 assign d5 = (a&~b&c);
 assign d6 = (a&b&~c);
 assign d7 = (a&b&c);
-
 endmodule 
-```
-### RTL LOGIC:
+~~~
+### RTL Logic:
 
 ![image](https://user-images.githubusercontent.com/94154683/171545203-cc7c2118-d4ae-4364-a095-9c418ef0a5d7.png)
 
 
-### TIMING DIAGRAM:
-
+### Timing Diagram:
 
 ![image](https://user-images.githubusercontent.com/94154683/171545245-b8c00f4e-8474-4533-8fad-755bb2704671.png)
 
+### Truth Table:
 
-### TRUTH TABLE:
 ![decoder6](https://user-images.githubusercontent.com/94154683/171546126-a5486670-9948-4b5d-aba6-dcad149b283b.png)
 
-
-### RESULTS 
-Thus the program to desing encoder and decoder is done.
+### Result:
+Thus,the program to desing encoder and decoder is done.
