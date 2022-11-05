@@ -68,8 +68,8 @@ D7 = X Y Z
 ### Program (Encoder):
 ~~~
 Program for Encoders and verify its truth table in quartus using Verilog programming.
-Developed by: H.Syed Abdul Wasih
-RegisterNumber:  212221240057
+Developed by: P.Monish
+RegisterNumber:  22007945
 
 module enc(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
 input d0,d1,d2,d3,d4,d5,d6,d7;
@@ -88,8 +88,8 @@ endmodule
 ### Program (Decoder):
 ~~~
 Program for Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: H.Syed Abdul Wasih
-RegisterNumber:  212221240057
+Developed by: P.Monish
+RegisterNumber:  22007945
 
 module enc(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
 input a,b,c;
